@@ -32,7 +32,7 @@ def test_connect():
 
 @socketio.on('disconnect', namespace='/test')
 def test_disconnect():
-    print('Client disconnected')
+    print('Client disconnected :(')
 
 if __name__ == '__main__':
     utils.log_initializer.initialize_logger(app.logger, 'logs')
