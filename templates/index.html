@@ -39,29 +39,30 @@
 
 
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <div class="panel panel-default">
               <div class="panel-heading">
                 <h2 class="panel-title">Commandes</h2>
               </div>
               <div class="panel-body">
                 <form id="emit" method="POST" action='#'>
-                  <input type="text" name="emit_data" id="emit_data" placeholder="Message">
-                  <button type="submit" class="btn btn-primary btn-lg">
-                    SEND
+				  <div class="form-group">
+                    <input type="text" class="form-control" name="emit_data" id="emit_data" placeholder="Message">
+				  </div>
+                  <button type="submit" class="btn btn-primary btn-md">
+                    Send
                   </button>
                 </form>
                 <form id="disconnect" method="POST" action='#'>
-                  <button type="submit" class="btn btn-primary btn-lg">
+                  <button type="submit" class="btn btn-danger btn-md">
                     Se déconnecter
                   </button>
                 </form>
               </div>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-sm-6">
             <div id="log" class="">
-              
             </div>
           </div>
         </div>

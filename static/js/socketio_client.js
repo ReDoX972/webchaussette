@@ -2,7 +2,8 @@ $(document).ready(function(){
     var socket = io.connect('http://' + document.domain + ':' + location.port + '/test');
 
     socket.on('my response', function(msg) {
-        $('#log').append('<p>Received: ' + msg.data + '</p>');
+		$('#log div:nth-child(6)').fadeOut();
+        $('#log').prepend('<div class="alert alert-info" role="alert"><p><strong>Received : </strong> ' + msg.data + '</p></div>');
     });
 
     $('form#emit').submit(function(event) {
