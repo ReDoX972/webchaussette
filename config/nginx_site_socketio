@@ -1,6 +1,6 @@
 server {
 	listen 80;
-	server_name rpi.harrix-rdx.com;
+	server_name 0.0.0.0;
 	access_log /var/log/nginx/nginx_access.log;
 
     location /socket.io {
